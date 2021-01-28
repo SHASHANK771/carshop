@@ -1,0 +1,238 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is bootstrap offline method</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-grid.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-grid.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-reboot.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-reboot.min.css' %}">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+
+    <link rel="stylesheet" href="{% static 'carshop.css' %}">
+  
+  
+</head>
+<body>
+<center>
+    <h1 style="color:yellow">Normal From </h1>
+    <br>
+    <form method="POST">
+    {% csrf_token %}
+    <label for="first">First Name</label>
+    <input type="text" name="first" id="first" placeholder="Enter the first">
+    <br>
+    <label for="last">Last Name</label>
+    <input type="text" name="last" id="last" placeholder="Enter the last">
+    <br>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="Enter the email">
+    <br>
+    <label for="address">Address</label>
+    <input type="text" name="address" id="address" placeholder="Enter the address">
+    <br>
+    <!---
+    <label for="phone_number">Address</label>
+    <input type="phone_number" name="phone_number" id="phone_number" placeholder="Enter the address">
+    <br>
+    <label for="date">Address</label>
+    <input type="date" name="address" id="address" placeholder="Enter the address">
+    <br>
+    <label for="address">Address</label>
+    <input type="time" name="time" id="time" placeholder="Enter the address">
+    <br>-->
+    <input type="submit" value="Submit">
+    </form>
+</center>
+
+
+
+
+
+  <!----
+<div class="d-flex bd-highlight mb-3">
+  <div class="p-2 bd-highlight">
+    <select style="margin-top: 30px;">
+      <option>shashank sen</option>
+       <option>shashank sen</option>
+        <option>shashank sen</option>
+         <option>shashank sen</option>
+    </select>
+  </div>
+  <div class="p-2 bd-highlight">
+    <select style="margin-top: 30px;">
+      <option>shashank sen</option>
+       <option>shashank sen</option>
+        <option>shashank sen</option>
+         <option>shashank sen</option>
+    </select>
+  </div>
+  <div class="ml-auto p-2 bd-highlight">
+    <div class="ml-auto p-2 bd-highlight ">
+    <br>
+    <div class="btn-group btn-group-sm" text-right style="margin-top: -10px;">
+    <button type="button" class="btn btn-primary">
+       <i class="fas fa-user-circle" style="font-size: 20px;"></i>
+    </button>
+    <button type="button" class="btn btn-primary">
+     <i class="fas fa-heart" style="font-size: 20px;"></i>
+    </button>
+    <button type="button" class="btn btn-primary">
+      <i class="fas fa-edit" style="font-size: 20px;"></i>
+    </button>
+    <button type="button" class="btn btn-primary">
+      <i class="fas fa-lock" style="font-size: 20px;"></i>
+    </button>
+  </div>
+  </div>
+</div>
+  </div>
+</div>
+  
+<hr>
+<div class="d-flex bd-highlight">
+  <div class="p-2 flex-fill bd-highlight" style="margin-left: 40px; font-size: 40px; color:skyblue;">Flex item </div>
+  <div class="p-2 flex-fill bd-highlight text-center">
+    <br>
+<select style="height: 40px; width: 200px;" >
+      <option>Pless select</option>
+      <option>body</option>
+      <option>charkhari</option>
+      <option>mahoba</option>
+      <input type="text" name="search" style="height: 40px;">
+      <button type="button" class="btn btn-primary" style="height: 40px;">SERCHAR</button>
+    </select>
+   
+  </div>
+  <div class="p-2 flex-fill bd-highlight text-right mr-5">
+    <br>
+  <i class="fas fa-shopping-cart" style="font-size: 50px; color: skyblue;">
+    <span style="color: black; font-size: 20px;">SHOPPING CART</span>
+  </i>
+ </div>
+</div>
+<br>
+
+
+<div class="topnav" id="myTopnav">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="myFunction()">&#9776;</a>
+  <div class="topnavtext">
+    <h5>shashank sen</h5>
+  </div>
+
+  
+</div>
+
+<div class="bg">
+<div id="bgtext">
+  <p style="font-size: 30px; color: white;">THE ALL-NEW</p>
+ <h4 style="font-size:65px; height: 100px;"><p style="background-color: rgb(0,0,0,0.5); width: 390px;">MAZDA-MX5</p></h4>
+ <p style="font-size: 30px; color: white;">STYLISH AND MODERN</p>
+ <button type="button" class="btn btn-primary" style="border-radius: 10px 10px 10px">Primary</button>
+<button type="button" class="btn btn-secondary" style="border-radius: 10px 10px 10px">Secondary</button>
+
+</div>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+} 
+</script>
+
+
+
+
+<div class="card  text-cyan">
+  
+  <div class="card-img-overlay">
+    <h5 class="card-title ml-3" style="margin-top: 0px;">
+      
+
+
+    </h5>
+    
+  </div>
+</div>
+
+<div class="responsive" style="background-color: red;"><br>
+  <div class="container">
+<div class="row">
+  <div class="column">
+    <div class="card" class="responsive">
+      <img src="image/01.jpg" alt="Jane" style="width:300px;" height="200px;">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="image/122.png" alt="Mike" style="width:100%" height="200px;">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="image/124.png" alt="John" style="width:100%" height="200px;">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="image" class="responsive">
+  <div class="imagetext"><br/>
+ 
+  -->
+
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+  
+  <script type="text/javascript" src="../js/popper.min.js"></script>
+ 
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+ 
+  <script type="text/javascript" src="../js/mdb.min.js"></script>
+  
+  <script type="text/javascript"></script>
+
+
+</body>
+</html>
+
