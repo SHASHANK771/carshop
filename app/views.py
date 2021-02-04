@@ -16,7 +16,6 @@ def carshop(request):
     return render(request,'carshop.html')
 h
 
-
 def shash(request):
     if request.method=="POST":
         first=request.POST.get('first')
